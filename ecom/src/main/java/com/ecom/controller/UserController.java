@@ -22,5 +22,4 @@ public class UserController {
         return "user added";
     }
 
-//    @RequestParam @RequestBody @RequestMapping @RequestAttribute @RequestHeader @RequestPart @RequestScope
 }
