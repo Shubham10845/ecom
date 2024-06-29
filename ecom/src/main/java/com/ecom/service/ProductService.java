@@ -13,7 +13,7 @@ import java.util.Random;
 
 @Service
 public class ProductService {
-    String imageUrl = "C:/Users/SShukla/Desktop/Learning/EcomImages/ProductImage/";
+    String imageUrl = "C:/Users/user/Desktop/Learning/EcomImages/ProductImage/";
 
     @Autowired
     ProductRepository productRepository;

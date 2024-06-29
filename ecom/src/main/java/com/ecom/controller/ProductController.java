@@ -30,11 +30,13 @@ public class ProductController {
     public String addProduct(@PathVariable("categoryTitle") String categoryTitle,
                              @RequestParam("files") MultipartFile files[],
                              @RequestParam("productJSON") String productJSON) {
+        System.out.println("Add product controller started");
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             Product product = objectMapper.readValue(productJSON, Product.class);
             productService.insertProduct(product, files, categoryTitle);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
         return "product added";
