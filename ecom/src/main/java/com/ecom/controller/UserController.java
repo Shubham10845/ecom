@@ -4,7 +4,6 @@ import com.ecom.model.User;
 import com.ecom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.annotation.RequestScope;
 
 @RestController
 public class UserController {
